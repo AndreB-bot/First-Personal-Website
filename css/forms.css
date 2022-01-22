@@ -1,0 +1,664 @@
+/************************** Standard Forms ************************************/
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+.form-control {
+    display: block;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+@media (min-width: 576px) {
+    .form-inline .form-control {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+    }
+}
+
+.input-group .input-group-prepend .input-group-text {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.input-group-prepend {
+    margin-right: -1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.input-group-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    align-items: center;
+}
+
+.input-group .form-control:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input-group .form-control {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+}
+
+.input-group {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex !important;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+
+#login-modal form {
+    margin: 5%;
+    height: 77.5%;
+    font-size: 26px;
+}
+
+#login-modal form .btn-primary {
+    margin-top: 5%;
+}
+
+#login-modal form .form-control{
+    height: 45px !important;
+}
+
+#login-modal #form-container {
+    display: inherit;
+    margin-top: 4%;
+}
+
+#sign-up-modal form {
+    height: 90%;
+    margin: 5%;
+}
+
+#sign-up-modal form .form-row {
+    margin-top: 2%;
+}
+
+
+#sign-up-modal form .form-check {
+    display: inline-flex;
+    margin-top: 3%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+#sign-up-modal form .form-check .form-check-label{
+    white-space: nowrap;
+}
+
+#sign-up-modal form-container {
+    margin-top: 4%;
+}
+
+/*#sign-up-modal form .form-check .form-check-label,*/
+#sign-up-modal form .btn-primary {
+    margin-left: 1.5%;
+}
+
+textarea {
+    resize: none;
+}
+
+/************************** Submission Form ***********************************/
+#form1 {
+    display: grid;
+}
+
+.title__container {
+    width: 100%;
+    height: 4.5rem;
+    padding: 0.1rem 1.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #42434e;
+}
+
+.title__container h1 {
+    letter-spacing: 2px;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 0.4rem;
+}
+
+.title__container p {
+    color: var(--shadow-color);
+    font-size: 0.75rem;
+}
+
+.body__container {
+    display: flex;
+}
+
+.left__container {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid #42434e;
+    padding: 1.25rem 0;
+    margin-right: 2rem;
+    padding-right: 1.8rem;
+}
+
+.side__titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.title__name {
+    padding: 0.6rem 0.1rem;
+    margin-bottom: 3.25rem;
+}
+
+.title__name h3 {
+    margin-bottom: 0.20rem;
+    text-align: right;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-top: 8%;
+}
+
+.title__name p {
+    text-align: right;
+    color: var(--shadow-color);
+}
+
+.progress__bar__container {
+    padding-top: 1.6rem;
+}
+
+.progress__bar__container ul {
+    margin-top: 7%;
+}
+
+.progress__bar__container ul .active {
+    background-color: var(--secondery-color);
+}
+
+.progress__bar__container ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background: var(--shadow-color);
+    padding: 0.5rem 0.6rem;
+    margin-bottom: 87%;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-left: 2rem;
+}
+
+.progress__bar__container ul li::before {
+    content: '';
+    width: 1px;
+    height: 20%;
+    position: absolute;
+    background-color: var(--shadow-color);
+}
+
+.progress__bar__container ul .active::before {
+    content: '';
+    width: 1px;
+    height: 15%;
+    position: absolute;
+    background-color: var(--secondery-color);
+}
+
+.right__container {
+    width: 65%;
+    display: flex;
+    padding: 1.5rem 1.5rem;
+}
+
+.right__container fieldset {
+    border: none;
+}
+
+.sub__title__container {
+    padding: 1rem 0 1.2rem 0;
+}
+.sub__title__container hr {
+    border-top: 1px solid #42434e;
+}
+.sub__title__container h2 {
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin: 0.4rem 0;
+}
+
+.sub__title__container p {
+    color: var(--shadow-color);
+}
+
+.active__form {
+    display: none;
+    width: 100%;
+}
+
+.input__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.25rem;
+    font-size: 2.5rem;
+}
+
+.input__container label {
+    color: #ffffff;
+    margin-bottom: 0.4rem;
+}
+
+.input__container input {
+    padding: 0.5rem;
+    font-size: 2.4rem;
+    border-radius: 0.75rem;
+    background: none;
+    border: 1px solid var(--secondery-color);
+    margin-bottom: 1.2rem;
+    outline: none;
+    color: #ffffff;
+}
+
+.nxt__btn {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 0;
+    font-size: 2.1rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    background: var(--secondery-color);
+    color: #ffffff;
+    border-width: inherit;
+}
+
+.nxt__btn:hover {
+    transform: scale(1.03);
+    background: #1cd68c;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    margin: 0;
+    padding: 0;
+}
+
+.prev__btn {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.selection {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--shadow-color);
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.members input[type=text]:hover,
+.selection:hover,
+.selection-active {
+    border: 1px solid var(--secondery-color);
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.members input[type=text]:hover {
+    cursor: text;
+}
+
+.progress-icon {
+    z-index: 2;
+}
+
+.imoji {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem 0.4rem;
+    margin: 0 0.2rem;
+    margin-right: 0.4rem;
+    font-size: 2rem;
+    font-weight: 900;
+    color: yellow;
+    border-radius: 50%;
+    background: var(--shadow-color);
+}
+
+.description-title h3 {
+    color: #ffffff;
+    margin-bottom: 4px;
+    margin: 5%;
+    white-space: nowrap;
+}
+
+.description-title p {
+    font-size: 0.75rem;
+    color: var(--shadow-color);
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 4rem !important;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.input__container input[type=range] {
+    display: flex;
+    align-items: flex-start;
+    padding: 0.9rem;
+    margin-top: 4.5%;
+}
+
+.input__container input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background: var(--secondery-color);
+    cursor: pointer;
+
+}
+
+.input__container input[type=range]::-webkit-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--secondery-color);
+    cursor: pointer;
+
+}
+
+.input__container input[type=range]::-webkit-slider-runnable-track {
+    background: none;
+}
+
+.output__value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border-radius: 2em;
+    padding: 0.8rem 0.8rem;
+    position: absolute;
+    background-color: var(--secondery-color);
+}
+
+.output__value::after {
+    content: '';
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: black;
+    transform: rotate(45deg);
+    position: absolute;
+    margin-top: 40px;
+    background-color: var(--secondery-color);
+}
+
+#submission-form-container {
+    display: flex;
+    margin: 0 2%;
+    background: #0161ae;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+#submission-form-container  img {
+    width: 100%;
+    height: 100%;
+}
+
+#submission-form-img-container {
+    width: 25%;
+}
+
+.controls {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.right__container fieldset {
+    width: 100%;
+}
+
+:root {
+    --primary-color: #0a007e;
+    --secondery-color: #25CC88;
+    --shadow-color: #9d9fb3
+}
+
+.form__container i {
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+}
+
+.l-input{
+    visibility: hidden; /* Makes input not-clickable */
+    position: absolute; /* Remove input from document flow */
+}
+
+.form__container {
+    /* margin-top: 4rem; */
+    background-color: rgb(0 0 0 / 50%);
+    border-radius: 2rem;
+    padding: 1rem;
+    width: 75%;
+}
+
+.members input[type=text] {
+    width: 37%;
+}
+
+.members input[type=file] {
+    width: 33%;
+}
+
+.members input {
+    font-size: 2rem;
+}
+
+.members .position {
+    width: 25% !important;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.value-entered {
+    background: #ffffff !important;
+    color: #000 !important;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: var(--primary-color);
+    }
+
+    .form__container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .body__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .right__container {
+        width: 90%;
+        margin: 0;
+    }
+
+    .title__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+    }
+
+    .left__container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    .buttons {
+        justify-content: space-between;
+    }
+
+    .description-title h3 {
+        font-size: 1rem;
+    }
+
+    .description-title p {
+        font-size: 0.6rem;
+    }
+
+    .side__titles {
+        display: none;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .title__name h3 {
+        font-size: 0.75rem;
+    }
+
+    .title__name p {
+        font-size: 0.5rem;
+    }
+
+    .progress__bar__container {
+        margin-bottom: 0;
+    }
+
+    .progress__bar__container ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+        padding: 0 2rem;
+    }
+
+    .progress__bar__container ul::before {
+        height: 5vh;
+    }
+
+    .progress__bar__container ul li {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .progress__bar__container ul .active::before {
+        transform: rotate(90deg);
+    }
+}
+
+/***************************** Comment Section ********************************/
+#respond #comment-submit {
+    background: steelblue;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+#comment-container {
+    margin: 0 30.5%;
+    margin-top: 3%;
+    color: #ffffff;
+}
+
+#comment-container ol {
+    list-style: none;
+    padding: 0;
+}
+
+#posts-list li{
+    font-size: 1.5rem;
+    color: #000;
+}
+
+#posts-list li:nth-child(odd) {
+    background: whitesmoke;
+}
+
+#posts-list li:nth-child(even) {
+    background: white;
+}

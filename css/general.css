@@ -1,0 +1,182 @@
+/********************* Semantics **********************************************/
+html, body {
+    height: 100%;
+}
+
+header {
+    background-color: black;
+    height: 114px;
+    margin: 0 auto;
+}
+
+nav {
+    margin: 0 auto !important;
+    max-width: 2456px;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+
+nav h4 {
+    white-space: nowrap;
+}
+
+
+/************************** Navigation ****************************************/
+
+i {
+    font-size: 20px;
+}
+
+#navbar-ul {
+    display: flex;
+    min-width: 60%;
+    overflow: hidden;
+    align-items: inherit;
+    height: 90%;
+}
+
+#navbar-ul a {
+    color: black;
+    white-space: nowrap;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 1%;
+}
+
+.navbar-ul-adj a {
+    padding-top: 7% !important;
+}
+
+#navbar-ul li {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-color: black;
+    border-bottom-style: none;
+    height: 90%;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+#navbar-ul li:hover {
+    z-index: 1;
+    height: 100%;
+}
+
+#navbar-ul h4 {
+    margin-left: 3%;
+    margin-bottom: 0;
+}
+
+.navbar {
+    border: none !important;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.navbar-brand {
+    display: flex;
+    padding-top: 12%;
+}
+
+.navbar-header {
+    list-style: outside none none;
+    margin: .5em 1em;
+    padding: 0;
+}
+
+.navbar-header a {
+    padding: .5em .8em;
+    color: rgba(255,255,255,.5);
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar-header a::before,
+.navbar-header a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+
+.navbar-header a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid yellow;
+    border-right: 3px solid yellow;
+    transform: translate(-100%, 50%);
+}
+
+.navbar-header a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid yellow;
+    border-left: 3px solid yellow;
+    transform: translate(100%, -50%)
+}
+
+.navbar-header a:hover:before,
+.navbar-header a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+}
+
+.navbar-header div {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    padding: 0;
+}
+
+#nav-container-wrapper,
+.nav-container-wrapper,
+.container-fluid {
+    width:inherit;
+    height: inherit;
+    display: inherit;
+    align-items: inherit;
+}
+
+#user-nav {
+    margin-left: auto;
+}
+
+#user-nav h4, #user-nav .glyphicon, .navbar-brand h4, #navbar-ul a:hover {
+    color : #ffffff !important;
+}
+
+#user-nav li {
+    padding-top: 6%;
+}
+
+#user-nav a {
+    display: flex;
+}
+
+#user-nav .glyphicon {
+    top: 12.2px;
+    margin-right: 11%;
+}
+
+/************************* Standard Classes ***********************************/
+.hid {
+ display: none; 
+}
+
+.active {
+    color: #ffffff !important;
+}
