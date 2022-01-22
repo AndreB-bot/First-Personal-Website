@@ -1,0 +1,83 @@
+<form id="sign-up-form">
+    <div id="sign-up-form-container">
+        <div class="form-row equal-width">
+            <div class="col-md-4 mb-3">
+                <label for="fName">First Name</label>
+                <input type="text" class="form-control" placeholder="First Name" id="fName" name="fName" maxlength="50" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="lName">Last Name</label>
+                <input type="text" class="form-control" placeholder="Last Name" id="lName" name="lName" maxlength="50" required>
+            </div>
+        </div>
+        <div class="form-row equal-width">
+            <div class="col-md-6 mb-3">
+                <label for="company_name">Company Name</label>
+                <input type="text" class="form-control" id="company_name" name="company_name" placeholder="Company Name"  maxlength="50" required>
+                <div class="invalid-feedback">
+                    Sorry, this company is already registered.
+                </div>
+            </div> 
+             <div class="col-md-4 mb-3">
+                <label for="email">Email</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                    </div>
+                    <input type="email" class="form-control" id="email" placeholder="Email" name="email" maxlength="50" aria-describedby="inputGroupPrepend2"  required>
+                </div>
+                <div class="invalid-feedback">
+                    Sorry, this email is already taken.
+                </div>
+            </div>
+        </div>
+        <div class="form-row full-width">
+            <div class="col-md-12 mb-3">
+                <label for="street_address">Street Address</label>
+                <input type="text" class="form-control" id="street_address" name="street_address" placeholder="Street Address" required>
+            </div>
+        </div>
+        <div class="form-row">            
+            <div class="col-md-6 mb-3">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city" name="city" placeholder="City"  required>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="province">Province</label>
+                <input type="text" class="form-control" id="province" name="province" placeholder="Province"  required>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="postal_code">Postal Code</label>
+                <input type="text" class="form-control" id="postal_code" name="postal_code" placeholder="Postal Code"  required>
+            </div>
+        </div>
+        <div class="form-row equal-width"> 
+            <div class="col-md-6 mb-3">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Username"  minLength="10" maxlength="50"  title="Must be at lease 10 characters long." required>
+                <ul style="padding-left: 6%;">
+                    <li><strong><small>Must be at least 10 characters long</small></strong></li>
+                </ul>
+                <div class="invalid-feedback">
+                    Sorry, this username is already registered.
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="password">Password</label>
+                <input type="password" class="form-control password" name="password" id="password" maxlength="50" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Requires an eight digit password, containing at least one uppercase, lowercase and digit" required >
+                <ul style="padding-left: 6%;">
+                    <li><strong><small>Must be at least 8 characters long</small></strong></li>
+                    <li><strong><small>Must contain one uppercase, lowercase and digit</small></strong></li>
+                </ul>
+            </div>            
+        </div>
+        <div class="form-row intro">
+            <div class="col-md-6 mb-3">
+                <label for="intro">Tell us about your company (optional)</label>
+                <textarea  class="form-control" name="intro" rows="10" id="intro" maxlength="500" placeholder="Go ahead, don't be shy..."></textarea>
+            </div>
+        </div>
+        <br/>
+        <button id="sign-up-submit-btn" class="btn btn-primary" type="submit">Submit</button>
+    </div>
+</form>

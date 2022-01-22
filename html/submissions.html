@@ -1,0 +1,191 @@
+<section id="project-sub-wrapper">
+    <div id="project-sub-container">
+        <div id="submission-form-container">
+            <div id="submission-form-img-container">
+                <img src="../css/imgs/team_group.jpg" alt="AEB Logo"/>
+            </div>
+            <div class="form__container">
+                <form id="project-submission-form" enctype="multipart/form-data" >
+                    <div class="title__container">
+                        <h1>Use this form to submit a project proposal</h1>
+                    </div>            
+                    <div class="body__container">
+                        <div class="left__container">
+                            <ul class="side__titles">
+                                <li class="title__name">
+                                    <h3>Project Title</h3>
+                                </li>
+                                <li class="title__name">
+                                    <h3>Description</h3>
+                                </li>
+                                <li class="title__name">
+                                    <h3>Services</h3>
+                                </li>
+                                <li class="title__name">
+                                    <h3>Budget</h3>
+                                </li>
+                                <li class="title__name">
+                                    <h3>Team </h3>
+                                </li>
+                            </ul>
+                            <div class="progress__bar__container">
+                                <ul>
+                                    <li class="active" id="icon1">
+                                        <i class="bi bi-pen-fill progress-icon"></i>
+                                    </li>
+                                    <li id="icon2">
+                                        <i class="bi bi-journal-text progress-icon"></i>
+                                    </li>
+                                    <li id="icon3">
+                                        <i class="bi bi-briefcase-fill progress-icon"></i>
+                                    </li>
+                                    <li id="icon4">
+                                        <i class="bi bi-currency-dollar progress-icon"></i>
+                                    </li>
+                                    <li id="icon5">
+                                        <i class="bi bi-flag-fill progress-icon"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="right__container">
+                            <fieldset id="form1">
+                                <div class="sub__title__container ">
+                                    <p>Step 1/5</p>
+                                    <h2>Let's start with the title of your project</h2>
+                                    <p>Please fill out the below details.</p>
+                                    <hr>
+                                    <div class="input__container"> 
+                                        <label for="title" >Title</label> 
+                                        <input id="title" name="title" placeholder="My New Project" type="text" required> 
+                                    </div>
+                                </div>
+                                <div class="controls">
+                                    <button class="nxt__btn" data-related="title"> Next</button> 
+                                </div>
+                            </fieldset>
+                            <fieldset class="active__form" id="form2">
+                                <div class="sub__title__container">
+                                    <p>Step 2/5</p>
+                                    <h2>Give a summary of the project <small>(max 1227 characters)</small></h2>
+                                    <p><em><small>Example: What you aim to accomplish?</small></em></p>
+                                    <hr>
+                                    <div class="input__container">
+                                        <label for="description">Description</label>
+                                        <textarea id="description" name="description" rows="7" cols="10" maxlength="1227" placeholder="Try and be as detailed as possible.." required></textarea>
+                                    </div>
+                                </div>
+                                <div class="buttons controls"> 
+                                    <button class="prev__btn">Back</button> 
+                                    <button class="nxt__btn" data-related="description">Next</button> 
+                                </div>
+                            </fieldset>
+                            <fieldset class="active__form" id="form3">
+                                <div class="sub__title__container">
+                                    <p>Step 3/5</p>
+                                    <h2>What service are looking for?</h2>
+                                    <hr>
+                                    <div class="input__container">
+
+                                        <div class="selection newB selection-active">
+                                            <div class="imoji">
+                                                <i class="bi bi-laptop"></i>
+                                            </div>
+                                            <div class="description-title">
+                                                <h3>Website Development</h3>
+                                            </div>
+                                            <input class="l-input" type="radio" id="web-development" name="chosen-dev-work" value="Web Development" required checked>
+                                        </div>
+                                        <div class="selection exitB">
+                                            <div class="imoji">
+                                                <i class="bi bi-phone-vibrate-fill" ></i>
+                                            </div>
+                                            <div class="description-title">
+                                                <h3>Mobile App Development</h3>
+                                            </div>
+                                            <input class="l-input" type="radio" id="mobile-development" name="chosen-dev-work" value="Mobile Development">
+                                        </div>
+                                        <div class="selection exitB">
+                                            <div class="imoji">
+                                                <i class="bi bi-file-earmark-code-fill"></i>
+                                            </div>
+                                            <div class="description-title">
+                                                <h3>Other Software Development</h3>
+                                            </div>
+                                            <input class="l-input" type="radio" id="software-development" name="chosen-dev-work" value="Software Development">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="buttons controls"> 
+                                    <button class="prev__btn" >Back</button> 
+                                    <button class="nxt__btn" data-related="chosen-dev-work">Next</button> 
+                                </div>
+
+                            </fieldset>
+                            <fieldset class="active__form" id="form4">
+                                <div class="sub__title__container">
+                                    <p>Step 4/5</p>
+                                    <h2>Please select your budget</h2>
+                                    <p>Please let us know budget this project</p>
+                                    <hr>
+                                    <div class="input__container"> 
+                                        <input name="budget" id="budget-slider" type="range" min="10000" max="500000" value="250000" class="slider" >
+                                        <div class="output__value"> </div>
+                                    </div>
+                                </div>
+
+                                <div class="buttons controls"> 
+                                    <button class="prev__btn" >Back</button> 
+                                    <button class="nxt__btn" data-related="budget">Next</button> 
+                                </div>
+                            </fieldset>
+                            <fieldset class="active__form" id="form5">
+                                <div class="sub__title__container">
+                                    <p>Step 5/5</p>
+                                    <h2>Project Members</h2>
+                                    <p>Finally, add the names and/or their profile pictures of your project members (max 5).</p>
+                                    <hr>
+                                    <div class="input__container members ">
+                                        <div class="form-row ">
+                                            <input type="text" name="member1" id="member1" placeholder="Enter a name here..." required>
+                                            <input type="text" class="position" name="position1" id="position1" placeholder="Enter a job-title..." required>
+                                            <input type="file" name="member1_img" id="member1_img">
+                                        </div>
+                                        <div class="form-row">
+                                            <input type="text" name="member2" id="member2" placeholder="Enter a name here...">
+                                            <input type="text" class="position" name="position2" id="position2" placeholder="Enter a job-title..." >
+                                            <input type="file" accept="image/*" name="member2_img" id="member2_img">
+                                        </div>
+                                        <div class="form-row">
+                                            <input type="text" name="member3" id="member3" placeholder="Enter a name here...">
+                                            <input type="text" class="position" name="position3" id="position3" placeholder="Enter a job-title..." >
+                                            <input type="file" accept="image/*" name="member3_img" id="member3_img">
+                                        </div>
+                                        <div class="form-row">
+                                            <input type="text" name="member4" id="member4" placeholder="Enter a name here...">
+                                            <input type="text" class="position" name="position4" id="position4" placeholder="Enter a job-title..." >
+                                            <input type="file" accept="image/*" id="member4_img" name="member4_img">
+                                        </div>
+                                        <div class="form-row">
+                                            <input type="text" name="member5" id="member5" placeholder="Enter a name here...">
+                                            <input type="text" class="position" name="position5" id="position5" placeholder="Enter a job-title..." >
+                                            <input type="file" accept="image/*" id="member5_img" name="member5_img">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="buttons controls">
+                                    <button class="prev__btn">Back</button> 
+                                    <input type="submit" class="nxt__btn" id="submit-btn" data-related="chosen-dev-work">
+                                </div>
+                        </fieldset>
+                    </div>
+            </div>
+            </form>
+        </div>
+        <script src="../assets/js/projectFormHandler.js"></script>
+    </div>
+
+</div>
+</section>
